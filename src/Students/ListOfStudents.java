@@ -1,6 +1,8 @@
 package Students;
 import java.util.ArrayList;
 
+import Customers.Customer;
+
 public class ListOfStudents {
 	private ArrayList <Student> list  = new ArrayList<Student>();
 	
@@ -44,4 +46,12 @@ public class ListOfStudents {
 		
 	}
 	
+	public void filterByCreditcardNumber(int begin, int end) {
+		for(Student s : list) {
+			Integer temp = Integer.parseInt(s.getPhoneNumber());
+			if(begin < temp && temp < end) {
+				System.out.println(s.toString());
+			}
+		}
+	}
 }

@@ -18,7 +18,17 @@ public class ListOfCustomers  {
 // метод, выводящий в консоль список кастомеров по алфавиту
 	public void filterByAlfabetOrder() {
 		Collections.sort(list);
-		
+		for(Customer c : list) {
+			System.out.println(c.toString());
+		}
+	}
+// метод, выводящий в консоль список кастомеров, у которых номер кредитной карты в заданном диапазоне	
+	public void filterByCreditcardNumber(int begin, int end) {
+		for(Customer c : list) {
+			if(begin < c.getCreditCardNumber() && c.getCreditCardNumber() < end) {
+				System.out.println(c.toString());
+			}
+		}
 	}
 	
 	public void show() {

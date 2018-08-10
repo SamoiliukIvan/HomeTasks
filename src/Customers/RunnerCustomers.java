@@ -1,6 +1,6 @@
 package Customers;
 
-public class Runner {
+public class RunnerCustomers {
 public static void main(String[] args) {
 	
 }
