@@ -1,5 +1,5 @@
 package NewYearGift;
 
-enum TypeOfWaffels {
+enum FlavourOfWaffels {
 CHOCOLATE, MILK
 }
